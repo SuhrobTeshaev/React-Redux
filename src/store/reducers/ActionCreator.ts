@@ -10,5 +10,6 @@ export const fetchUsers =   (dispatch:AppDispatch) => {
         dispatch(userSlice.actions.userFetchingSuccess(response.data))
     }catch(e) {
         dispatch(userSlice.actions.userFetchingError(e.message))
+        
     }
 }
